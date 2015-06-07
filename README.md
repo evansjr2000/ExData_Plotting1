@@ -4,7 +4,7 @@
 
 The following was in the original README file, except for the plots which are my own.
 
-
+<i>
 This assignment uses data from
 the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
 Learning Repository</a>, a popular repository for machine learning
@@ -96,6 +96,7 @@ date. There should be four PNG files and four R code files.
 
 The four plots that you will need to construct are shown below. 
 
+</i>
 
 ### Plot 1
 
