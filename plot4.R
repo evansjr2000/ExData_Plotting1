@@ -3,7 +3,7 @@ plot4 <- function()
 # There are 96 pixels per inch when translating from Cairo graphics to PNG.
 # So 5 inches is 5 x 96, or 480 pixels.
 
-  X11(width=5,height=5,type="cairo")
+  mydev <- X11(width=5,height=5,type="cairo")
   power2 <- read.table("household_power_consumption.txt", header = TRUE, sep = ";", na.strings = "?")
   power <- tbl_df(power2)
   power2 <- mutate(power,Correct_Date = dmy_hms(paste(Date,Time)))
@@ -40,8 +40,8 @@ plot4 <- function()
   # (font problem)
   #dev.copy(png,"plot2.png",width=480,height=480)
   #dev.off()
-  #savePlot(filename = "plot4.png", type = "png", device =  dev.cur())
-  #dev.off()
+  savePlot(filename = "plot4.png", type = "png", device =  dev.cur())
+  dev.off()
   #mydev <- dev.copy(png,"plot4.png",width=480,height=480)
   #dev.off()
 }
